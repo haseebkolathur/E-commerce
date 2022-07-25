@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: 'kumbh_sansregular';
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol,ul {
+    list-style: none;
+}
+input,textarea,select {
+    font-family: "kumbh_sansregular";
+    font-weight: 500;
+}
+a {
+    color: rgb(0, 0, 0);
+}
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.hidden {
+    display: none;
+}
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+.wrapper {
+    width: 70%;
+    margin: 0px auto;
+    max-width: 1100px;
+}
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@font-face {
+    font-family: 'kumbh_sansregular';
+    src: url('../fonts/kumbhsans-variablefont_wght-webfont.woff2') format('woff2'),
+    url('../fonts/kumbhsans-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+::placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #9b9b9b;
+}
+
+header { 
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(219, 9%, 78%);;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cart-display{
+    opacity: 1 !important;
+}
+
+.color img {
+    opacity: 0.5;
+}
+
+#logo {
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo a {}
+
+#logo a img { 
+    width: 100%;
+    display: block;
+}
+
+header ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
+    margin-right: 465px;
+    height: 100%;
+}
+
+header ul li { 
+    display: flex;
+    justify-content: center;
+    min-width: 50px;
+    align-items: center;
+    transition: all 0.1s ease-out 0.05s;
+    height: 100%;
+}
+
+header ul li a { 
+    color: hsl(219, 9%, 60%);
+}
+
+header ul li a:hover{
+    color: #000;
+}
+
+header ul li:hover{
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    height: 100%;
+}
+
+#right { 
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right div.face { 
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#right div.face:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+
+#right div a {}
+
+#right div a img { 
+    width: 100%;
+    height: 100%;
+}
+
+header div.cart-on{
+    width: 1518px;
+    height: 700px;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    top: 90px;
+    right: -2px;
+}
+
+div.cart-on div.inner{
+    width: 345px;
+    height: 215px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.cart-on div{
+    width: 80%;
+}
+
+div.cart-on div.top{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+div.cart-on div.bottom{
+    display: flex;
+    height: 190px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.cart-on div.bottom p {
+    color: grey;
+}
+
+#spotlight { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 690px;
+}
+
+#spotlight .wrapper { 
+}
+
+#spotlight .main { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 690px;
+}
+
+#spotlight .main .left { 
+    width: 45%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#spotlight .main .left .leftimg { 
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#spotlight .main .left .leftimg.first img.slide1{
+    display: block;
+}
+
+#spotlight .main .left .leftimg.second img.slide2{
+    display: block;
+}
+
+#spotlight .main .left .leftimg.third img.slide3{
+    display: block;
+}
+
+#spotlight .main .left .leftimg.forth img.slide4{
+    display: block;
+}
+
+#spotlight .main .left .leftimg img { 
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#spotlight .main .left .bottomimg { 
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#spotlight .main .left .bottomimg li { 
+    width: 17%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#spotlight .main .left .bottomimg li:hover{
+    border: 3px solid hsl(26, 100%, 55%);
+}
+
+#spotlight .main .left .bottomimg li .thumb { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    z-index: 1;
+    transition: all 0.1s ease-in-out;
+}
+
+#spotlight .main .left .bottomimg li .thumb img { 
+    width: 100%;
+    height: 100%;
+}
+
+#spotlight .main .right { 
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    letter-spacing: 0.2em;
+}
+
+#spotlight .main .right .head { 
+    color: hsl(26, 100%, 55%);
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#spotlight .main .right h1 { 
+    font-size: 40px;
+    font-weight: 900;
+    width: 450px;
+    margin-bottom: 40px;
+}
+
+#spotlight .main .right p { 
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.7em;
+    font-weight: 900;
+    color: hsl(220, 14%, 67%);
+}
+
+#spotlight .main .right .prices { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 170px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+#spotlight .wrapper .main .right .prices .new { 
+    width: 70%;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+#spotlight .main .right .prices span { 
+    width: 30%;
+    height: 20px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(26, 100%, 55%);
+    background: hsl(25, 100%, 94%);
+    border-radius: 5px;
+}
+
+#spotlight .main .right .prices .x { 
+    width: 40%;
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+}
+
+#spotlight .main .right .cart { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+#spotlight .wrapper .main .right .cart .left { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 150px;
+    background: hsl(223, 64%, 94%);
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+#spotlight .main .right .cart .left .control { 
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(26, 100%, 55%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#spotlight .main .right .cart .left h4 { 
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#spotlight .main .right .cart .right { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: hsl(26, 100%, 55%);
+    width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#spotlight .main .right .cart .right .cart-img { 
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+#spotlight .main .right .cart .right .cart-img img { 
+    width: 100%;
+    height: 100%;
+    filter: brightness(3.5);
+}
+
+#spotlight .main .right .cart .right .white { 
+    color: #fff;
+}
